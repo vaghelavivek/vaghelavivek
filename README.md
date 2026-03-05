@@ -114,9 +114,9 @@ Focused on:
 
 ## GitHub Statistics
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOURUSERNAME\&show_icons=true)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=vaghelavivek\&show_icons=true)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOURUSERNAME\&layout=compact)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=vaghelavivek\&layout=compact)
 
 ---
 
@@ -133,6 +133,5 @@ I enjoy contributing to projects related to:
 
 ## Contact
 
-GitHub: https://github.com/vaghelavivek
 LinkedIn: https://linkedin.com/in//vivek-vaghela
 Email: [vaghelavivek150@gmail.com](mailto:vaghelavivek150@gmail.com)
