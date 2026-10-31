@@ -1,0 +1,19 @@
+{
+  "_help": "Edit this file and push: the GitHub Action regenerates every image. 'yearsSince' values grow automatically; 'value' entries are figures GitHub cannot read (Upwork, private client repos), so update them here when they change.",
+  "experience": {
+    "_help": "Your stated experience on a given month. It grows by 1 every 12 months from that point.",
+    "years": 7,
+    "asOf": "2026-10"
+  },
+  "highlights": [
+    { "experience": true, "label": "years building web apps" },
+    { "value": "5", "label": "production SaaS products" },
+    { "value": "4", "label": "MCP servers shipped" },
+    { "value": "105", "label": "tools in the largest MCP server" },
+    { "value": "100%", "label": "Upwork Job Success" },
+    { "value": "1,400+", "label": "hours on Upwork" },
+    { "value": "2,093", "label": "tests in CutYears" },
+    { "yearsSince": "2022-07", "label": "years on one SaaS product" }
+  ],
+  "manualFiguresAsOf": "2026-10"
+}

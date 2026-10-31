@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="90" viewBox="0 0 1200 90" role="img" aria-label="Footer">
+  <defs>
+    <path id="wave" d="M0 30 Q150 0 300 30 T600 30 T900 30 T1200 30 T1500 30 T1800 30 T2100 30 T2400 30 V90 H0 Z"/>
+  </defs>
+  <g opacity="0.22" fill="#7aa2f7">
+    <use href="#wave"><animateTransform attributeName="transform" type="translate" from="0 0" to="-1200 0" dur="14s" repeatCount="indefinite"/></use>
+  </g>
+  <g opacity="0.15" fill="#bb9af7">
+    <use href="#wave" y="12"><animateTransform attributeName="transform" type="translate" from="-1200 0" to="0 0" dur="18s" repeatCount="indefinite"/></use>
+  </g>
+</svg>

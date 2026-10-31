@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-label="Vivek Vaghela – Full-Stack SaaS and AI Engineer">
+  <title>Vivek Vaghela – Full-Stack SaaS &amp; AI Engineer</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1424"/>
+      <stop offset="0.55" stop-color="#1a1b27"/>
+      <stop offset="1" stop-color="#1e2a4a"/>
+    </linearGradient>
+    <linearGradient id="name" x1="0" x2="1">
+      <stop offset="0" stop-color="#7aa2f7"/>
+      <stop offset="1" stop-color="#bb9af7"/>
+    </linearGradient>
+    <path id="wave" d="M0 30 Q150 0 300 30 T600 30 T900 30 T1200 30 T1500 30 T1800 30 T2100 30 T2400 30 V90 H0 Z"/>
+  </defs>
+  <style>
+    .name { font: 800 58px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .role { font: 600 24px 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace; fill: #c0caf5; }
+    .stack { font: 500 15px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #787c99; letter-spacing: 1px; }
+  </style>
+
+  <rect width="1200" height="260" fill="url(#bg)"/>
+
+  <text x="600" y="98" text-anchor="middle" class="name" fill="url(#name)">Vivek Vaghela</text>
+
+  <!-- Rotating role line. Line 1 is visible by default, so the header still reads well without animation. -->
+  <g text-anchor="middle">
+    <text x="600" y="146" class="role">&gt; Full-Stack SaaS &amp; AI Engineer<animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.21;0.25;0.96;1" dur="12s" repeatCount="indefinite"/></text>
+    <text x="600" y="146" class="role" opacity="0">&gt; {{EXPERIENCE_YEARS}}+ years shipping production SaaS<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.25;0.29;0.46;0.5;1" dur="12s" repeatCount="indefinite"/></text>
+    <text x="600" y="146" class="role" opacity="0">&gt; MCP servers for ChatGPT &amp; Claude<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5;0.54;0.71;0.75;1" dur="12s" repeatCount="indefinite"/></text>
+    <text x="600" y="146" class="role" opacity="0">&gt; Building with Claude Code every day<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.75;0.79;0.96;1" dur="12s" repeatCount="indefinite"/></text>
+  </g>
+
+  <text x="600" y="186" text-anchor="middle" class="stack">LARAVEL · VUE · NUXT · NEXT.JS · NESTJS · TYPESCRIPT · CLAUDE CODE · MCP</text>
+
+  <g transform="translate(0 205)">
+    <g opacity="0.18" fill="#7aa2f7">
+      <use href="#wave"><animateTransform attributeName="transform" type="translate" from="0 0" to="-1200 0" dur="14s" repeatCount="indefinite"/></use>
+    </g>
+    <g opacity="0.12" fill="#bb9af7">
+      <use href="#wave" y="12"><animateTransform attributeName="transform" type="translate" from="-1200 0" to="0 0" dur="18s" repeatCount="indefinite"/></use>
+    </g>
+  </g>
+</svg>

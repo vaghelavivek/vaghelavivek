@@ -1,0 +1,55 @@
+name: Update profile stats
+
+on:
+  schedule:
+    - cron: '17 * * * *' # hourly (off the top of the hour, when runners are busiest)
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: profile-stats
+  cancel-in-progress: true
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run tests
+        run: node --test scripts/lib/streaks.test.mjs scripts/lib/highlights.test.mjs
+
+      - name: Generate SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/generate-stats.mjs "${{ github.repository_owner }}" dist
+
+      # Publish to a separate branch as a single commit, so main stays clean.
+      # If any step above fails, nothing is pushed and the last good images stay live.
+      - name: Publish to output branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd dist
+          git init -q -b output
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add header.svg highlights.svg stats.svg heatmap.svg
+          git commit -q -m "chore: update profile stats"
+          git push -q --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" output
+
+      # GitHub disables scheduled workflows after 60 days without repo activity; re-enabling keeps it alive.
+      - name: Keep schedule alive
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/profile-stats.yml/enable" || true
