@@ -7,7 +7,7 @@ Building scalable SaaS platforms, APIs, and developer tools.
 
 ## About
 
-I am a software engineer with **6+ years of experience designing and building scalable web applications**.
+I am a software engineer with **7+ years of experience designing and building scalable web applications**.
 My work focuses on **backend architecture, distributed APIs, and SaaS platforms**.
 
 I primarily work with **Laravel and Vue.js**, building systems that handle complex workflows such as funnel builders, marketing automation, analytics dashboards, and payment infrastructure.
