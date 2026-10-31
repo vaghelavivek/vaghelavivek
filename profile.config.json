@@ -6,14 +6,42 @@
     "asOf": "2026-10"
   },
   "highlights": [
-    { "experience": true, "label": "years building web apps" },
-    { "value": "5", "label": "production SaaS products" },
-    { "value": "4", "label": "MCP servers shipped" },
-    { "value": "105", "label": "tools in the largest MCP server" },
-    { "value": "100%", "label": "Upwork Job Success" },
-    { "value": "1,400+", "label": "hours on Upwork" },
-    { "value": "2,093", "label": "tests in CutYears" },
-    { "yearsSince": "2022-07", "label": "years on one SaaS product" }
+    {
+      "experience": true,
+      "label": "years building web apps"
+    },
+    {
+      "value": "4,200+",
+      "label": "commits shipped"
+    },
+    {
+      "value": "40+",
+      "label": "production repositories"
+    },
+    {
+      "value": "1,400+",
+      "label": "hours on Upwork"
+    },
+    {
+      "value": "100%",
+      "label": "Upwork Job Success"
+    },
+    {
+      "value": "Top Rated",
+      "label": "Upwork talent badge"
+    },
+    {
+      "value": "105",
+      "label": "AI tools in one MCP server"
+    },
+    {
+      "yearsSince": "2022-07",
+      "label": "years with one SaaS client"
+    }
   ],
-  "manualFiguresAsOf": "2026-10"
+  "manualFiguresAsOf": "2026-10",
+  "_sources": {
+    "commits shipped": "Non-merge commits authored by Vivek across all client and own repos since 2021, deduplicated (4,272 in Oct 2026).",
+    "production repositories": "Distinct repositories with Vivek's commits (44 in Oct 2026)."
+  }
 }

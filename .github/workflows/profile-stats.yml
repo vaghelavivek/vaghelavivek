@@ -27,7 +27,7 @@ jobs:
           node-version: 22
 
       - name: Run tests
-        run: node --test scripts/lib/streaks.test.mjs scripts/lib/highlights.test.mjs
+        run: node --test scripts/lib/contributions.test.mjs scripts/lib/highlights.test.mjs
 
       - name: Generate SVGs
         env:

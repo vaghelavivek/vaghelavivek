@@ -5,8 +5,9 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { fetchContributions } from './lib/github.mjs';
 import { experienceYears, resolveHighlights, validateConfig } from './lib/highlights.mjs';
-import { computeStats, mergeDays } from './lib/streaks.mjs';
-import { renderHeatmap, renderHighlights, renderStatsCard } from './lib/svg.mjs';
+import { renderContributions, renderHighlights } from './lib/cards.mjs';
+import { computeStats, mergeDays } from './lib/contributions.mjs';
+import { renderHeatmap } from './lib/heatmap.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -45,7 +46,7 @@ async function main() {
   const files = {
     'header.svg': await renderHeader(config, now),
     'highlights.svg': renderHighlights(resolveHighlights(config, now), config.manualFiguresAsOf),
-    'contributions.svg': renderStatsCard(stats, now),
+    'contributions.svg': renderContributions(stats, now),
     'calendar.svg': renderHeatmap(heatmapDays, lastYearTotal),
   };
 

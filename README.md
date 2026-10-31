@@ -24,8 +24,6 @@ I build SaaS products end to end and connect them to AI. I'm a core developer on
 
 ---
 
-### In numbers
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/vaghelavivek/vaghelavivek/output/highlights.svg" alt="Career highlights" width="95%" />
 </p>
@@ -83,9 +81,10 @@ own:     I review every line that ships
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/vaghelavivek/vaghelavivek/output/contributions.svg" alt="GitHub contribution stats" width="95%" />
-  <br/><br/>
-  <img src="https://raw.githubusercontent.com/vaghelavivek/vaghelavivek/output/calendar.svg" alt="Contribution heatmap for the last year" width="95%" />
 </p>
+<!-- Contribution calendar is still generated hourly. Re-add once the last 12 months are filled in:
+<p align="center"><img src="https://raw.githubusercontent.com/vaghelavivek/vaghelavivek/output/calendar.svg" alt="Contribution calendar for the last year" width="95%" /></p>
+-->
 
 <sub>Every number on this page is generated hourly by a GitHub Action in this repo: GitHub figures come live from the GitHub API (including private client repositories), year counts are calculated from dates, and the rest come from <a href="profile.config.json">profile.config.json</a>. Before 2021 my work lived in employer-owned Git accounts.</sub>
 

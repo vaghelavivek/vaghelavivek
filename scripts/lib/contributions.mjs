@@ -12,30 +12,24 @@ export function mergeDays(dayLists) {
   return [...byDate.values()].sort((a, b) => toTime(a.date) - toTime(b.date));
 }
 
-function longestStreak(days) {
-  let best = 0;
-  let run = 0;
-  let previous = null;
+function bestMonth(days) {
+  const totals = new Map();
   for (const { date, count } of days) {
-    const contiguous = previous !== null && toTime(date) - previous === DAY_MS;
-    run = count > 0 ? (contiguous ? run + 1 : 1) : 0;
-    best = Math.max(best, run);
-    previous = toTime(date);
+    const month = date.slice(0, 7);
+    totals.set(month, (totals.get(month) ?? 0) + count);
+  }
+  let best = { month: days[0]?.date.slice(0, 7) ?? '', count: 0 };
+  for (const [month, count] of totals) {
+    if (count > best.count) best = { month, count };
   }
   return best;
 }
 
-/** Streak ending today, or yesterday if nothing has been pushed yet today. */
-function currentStreak(days, today) {
-  const counts = new Map(days.map((d) => [d.date, d.count]));
-  let cursor = toTime(today);
-  if (!counts.get(today)) cursor -= DAY_MS;
-  let streak = 0;
-  while ((counts.get(new Date(cursor).toISOString().slice(0, 10)) ?? 0) > 0) {
-    streak += 1;
-    cursor -= DAY_MS;
-  }
-  return streak;
+function bestDay(days) {
+  return days.reduce((best, d) => (d.count > best.count ? { date: d.date, count: d.count } : best), {
+    date: days[0]?.date ?? '',
+    count: 0,
+  });
 }
 
 export function computeStats(days, today) {
@@ -47,7 +41,7 @@ export function computeStats(days, today) {
     year,
     thisYear: sum(days.filter((d) => d.date.startsWith(year))),
     lastYear: sum(days.filter((d) => toTime(d.date) > yearAgo && d.date <= today)),
-    currentStreak: currentStreak(days, today),
-    longestStreak: longestStreak(days),
+    bestMonth: bestMonth(days),
+    bestDay: bestDay(days),
   };
 }
