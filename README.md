@@ -3,10 +3,10 @@
 </p>
 
 <p align="center">
-  <a href="https://www.upwork.com/freelancers/~0135d9781ef7f212a9"><img src="assets/badges/upwork.svg" alt="Upwork profile" /></a>
-  <a href="https://www.linkedin.com/in/vivek-vaghela"><img src="assets/badges/linkedin.svg" alt="LinkedIn" /></a>
-  <a href="mailto:vaghelavivek150@gmail.com"><img src="assets/badges/email.svg" alt="Email" /></a>
-  <a href="https://cutyears.com"><img src="assets/badges/cutyears.svg" alt="CutYears, live product" /></a>
+  <a href="https://www.upwork.com/freelancers/~0135d9781ef7f212a9"><img src="assets/ui/profile.svg" alt="Upwork profile" /></a>
+  <a href="https://www.linkedin.com/in/vivek-vaghela"><img src="assets/ui/connect.svg" alt="LinkedIn" /></a>
+  <a href="mailto:vaghelavivek150@gmail.com"><img src="assets/ui/mail.svg" alt="Email" /></a>
+  <a href="https://cutyears.com"><img src="assets/ui/live-site.svg" alt="CutYears, live product" /></a>
 </p>
 
 ---
@@ -68,13 +68,13 @@ own:     I review every line that ships
 </p>
 
 <p align="center">
-  <img src="assets/badges/claude-code.svg" alt="Claude Code" />
-  <img src="assets/badges/claude-api.svg" alt="Claude API" />
-  <img src="assets/badges/openai.svg" alt="OpenAI API" />
-  <img src="assets/badges/mcp.svg" alt="MCP servers and OAuth" />
-  <img src="assets/badges/stripe.svg" alt="Stripe" />
-  <img src="assets/badges/twilio.svg" alt="Twilio" />
-  <img src="assets/badges/pusher.svg" alt="Pusher" />
+  <img src="assets/ui/claude-code.svg" alt="Claude Code" />
+  <img src="assets/ui/claude-api.svg" alt="Claude API" />
+  <img src="assets/ui/openai.svg" alt="OpenAI API" />
+  <img src="assets/ui/mcp.svg" alt="MCP servers and OAuth" />
+  <img src="assets/ui/stripe.svg" alt="Stripe" />
+  <img src="assets/ui/twilio.svg" alt="Twilio" />
+  <img src="assets/ui/pusher.svg" alt="Pusher" />
 </p>
 
 ---
@@ -82,9 +82,9 @@ own:     I review every line that ships
 ### GitHub activity
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vaghelavivek/vaghelavivek/output/stats.svg" alt="GitHub contribution stats" width="95%" />
+  <img src="https://raw.githubusercontent.com/vaghelavivek/vaghelavivek/output/contributions.svg" alt="GitHub contribution stats" width="95%" />
   <br/><br/>
-  <img src="https://raw.githubusercontent.com/vaghelavivek/vaghelavivek/output/heatmap.svg" alt="Contribution heatmap for the last year" width="95%" />
+  <img src="https://raw.githubusercontent.com/vaghelavivek/vaghelavivek/output/calendar.svg" alt="Contribution heatmap for the last year" width="95%" />
 </p>
 
 <sub>Every number on this page is generated hourly by a GitHub Action in this repo: GitHub figures come live from the GitHub API (including private client repositories), year counts are calculated from dates, and the rest come from <a href="profile.config.json">profile.config.json</a>. Before 2021 my work lived in employer-owned Git accounts.</sub>
@@ -98,7 +98,7 @@ own:     I review every line that ships
 </p>
 
 <p align="center">
-  <a href="https://www.upwork.com/freelancers/~0135d9781ef7f212a9"><img src="assets/badges/hire-upwork.svg" alt="Hire me on Upwork" /></a>
+  <a href="https://www.upwork.com/freelancers/~0135d9781ef7f212a9"><img src="assets/ui/hire.svg" alt="Hire me on Upwork" /></a>
 </p>
 
 <img src="assets/footer.svg" alt="" width="100%" />

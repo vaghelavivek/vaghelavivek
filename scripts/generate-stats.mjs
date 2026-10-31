@@ -45,8 +45,8 @@ async function main() {
   const files = {
     'header.svg': await renderHeader(config, now),
     'highlights.svg': renderHighlights(resolveHighlights(config, now), config.manualFiguresAsOf),
-    'stats.svg': renderStatsCard(stats, now),
-    'heatmap.svg': renderHeatmap(heatmapDays, lastYearTotal),
+    'contributions.svg': renderStatsCard(stats, now),
+    'calendar.svg': renderHeatmap(heatmapDays, lastYearTotal),
   };
 
   await mkdir(outDir, { recursive: true });
