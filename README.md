@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.upwork.com/freelancers/~0135d9781ef7f212a9"><img src="https://raw.githubusercontent.com/vaghelavivek/vaghelavivek/output/header.svg" alt="Vivek Vaghela – Full-Stack SaaS & AI Engineer" width="100%" /></a>
+  <a href="https://www.upwork.com/freelancers/~0135d9781ef7f212a9"><img src="https://raw.githubusercontent.com/vaghelavivek/vaghelavivek/output/header.svg?v=3" alt="Vivek Vaghela – Full-Stack SaaS & AI Engineer" width="100%" /></a>
 </p>
 
 <p align="center">
@@ -25,7 +25,7 @@ I build SaaS products end to end and connect them to AI. I'm a core developer on
 ---
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vaghelavivek/vaghelavivek/output/highlights.svg" alt="Career highlights" width="95%" />
+  <img src="https://raw.githubusercontent.com/vaghelavivek/vaghelavivek/output/highlights.svg?v=3" alt="Career highlights" width="95%" />
 </p>
 
 ---
@@ -80,10 +80,10 @@ own:     I review every line that ships
 ### GitHub activity
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vaghelavivek/vaghelavivek/output/contributions.svg" alt="GitHub contribution stats" width="95%" />
+  <img src="https://raw.githubusercontent.com/vaghelavivek/vaghelavivek/output/contributions.svg?v=3" alt="GitHub contribution stats" width="95%" />
 </p>
 <!-- Contribution calendar is still generated hourly. Re-add once the last 12 months are filled in:
-<p align="center"><img src="https://raw.githubusercontent.com/vaghelavivek/vaghelavivek/output/calendar.svg" alt="Contribution calendar for the last year" width="95%" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/vaghelavivek/vaghelavivek/output/calendar.svg?v=3" alt="Contribution calendar for the last year" width="95%" /></p>
 -->
 
 <sub>Every number on this page is generated hourly by a GitHub Action in this repo: GitHub figures come live from the GitHub API (including private client repositories), year counts are calculated from dates, and the rest come from <a href="profile.config.json">profile.config.json</a>. Before 2021 my work lived in employer-owned Git accounts.</sub>
